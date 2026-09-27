@@ -1,4 +1,5 @@
 import { getState } from "./state.js";
+import { showBubble } from "../ui/dialogue.js";
 
 function applyPersonality() {
   const state = getState();
