@@ -3,7 +3,6 @@ import { showBubble } from "../ui/dialogue.js";
 
 let lastSpeak = 0;
 
-// 🔥 THIS is the "trigger occasionally" function
 function maybeSpeak(state) {
   const now = Date.now();
 
@@ -28,7 +27,6 @@ function maybeSpeak(state) {
   }
 }
 
-// 🔥 THIS is your main personality loop
 function applyPersonality() {
   if (!window.model) return;
 
@@ -61,9 +59,7 @@ function applyPersonality() {
       break;
   }
 
-  // 🔥 THIS is where "inside your loop" goes
   maybeSpeak(state);
 }
 
-// 🔥 THIS runs the loop continuously
 setInterval(applyPersonality, 100);
