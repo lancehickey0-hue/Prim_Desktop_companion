@@ -1,0 +1,9 @@
+{
+  "idleThresholds": {
+    "sleepy": 20000,
+    "verySleepy": 60000
+  },
+  "cursorSensitivity": 0.6,
+  "headSensitivity": 18,
+  "eyeSensitivity": 0.6
+}
