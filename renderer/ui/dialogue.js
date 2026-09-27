@@ -20,4 +20,16 @@ export function speak(state) {
   const text = moodLines[Math.floor(Math.random() * moodLines.length)];
 
   showBubble(text);
+};
+
+export function showBubble(text) {
+  const el = document.getElementById("bubble");
+  if (!el) return;
+
+  el.innerText = text;
+  el.style.opacity = 1;
+
+  setTimeout(() => {
+    el.style.opacity = 0;
+  }, 3000);
 }
